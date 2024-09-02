@@ -1,6 +1,7 @@
 import {Component} from "react";
 import './App.css';
-import Clock from "./components/Clock";
+// import Clock from "./components/Clock";
+import SecondClock from "./components/SecondClock";
 
 /*
 * // NOTE Mounting LifeCycle in class components
@@ -28,7 +29,7 @@ class App extends Component {
     //   forth
   componentDidMount() {
     console.log("App.js - componentDidMount()");
-    this.timer = setInterval(()=> this.tick(),1000);
+    // this.timer = setInterval(()=> this.tick(),1000);
   }
 
   tick(){
@@ -57,7 +58,7 @@ class App extends Component {
           <p>سلام دوست عزیز</p>
             {
                 showClock ? (
-                    <Clock date={date} color={color}/>
+                    <SecondClock date={date} color={color}/>
                 ) : null
             }
             <hr/>
